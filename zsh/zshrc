@@ -1,0 +1,12 @@
+eval "$(starship init zsh)"
+
+if [ -d "$HOME/.zshrc.d" ]; then
+  local -a conf_files=("$HOME/.zshrc.d"/*.{sh,zsh}(N))
+  local rcfile
+  # sort and source conf files
+  for rcfile in ${(o)conf_files}; do
+    # ignore files that begin with a tilde
+    case ${rcfile:t} in '~'*) continue;; esac
+    source "$rcfile"
+  done
+fi
