@@ -1,4 +1,4 @@
-local HOMEDIR = homedir().canonical_path
+local HOMEDIR = homedir(vars.user).canonical_path
 local CONFIGDIR = HOMEDIR .. "/.config"
 
 local DIROPTS = {
