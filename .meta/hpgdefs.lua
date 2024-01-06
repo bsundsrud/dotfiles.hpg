@@ -77,8 +77,15 @@ end
 ---@field user string? User to assign object to.
 ---@field group string? Group to assign object to.
 
+--- Options table for chown directory.
+---@class DirChownOpts
+---@field user string? User to assign object to.
+---@field group string? Group to assign object to.
+---@field recursive boolean? Whether or not to apply chown recursively. Default `false`.
+
+
 --- Change ownership of a directory.
----@param opts ChownOpts
+---@param opts DirChownOpts
 ---@return Dir dir Original `Dir` instance.
 function Dir:chown(opts)
 end
