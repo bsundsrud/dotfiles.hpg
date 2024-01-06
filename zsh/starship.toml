@@ -49,6 +49,8 @@ text_three = '#2a2a27'
 return_success = '#B6DC76'
 return_fail = '#F24236'
 
+[gcloud]
+disabled = true
 
 [os]
 style = 'bg:bar_one fg:text_one'
