@@ -8,7 +8,7 @@ export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}' --bind 'ctrl-/:chan
 export FZF_ALT_C_COMMAND="fd --type d ."
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -n 200'"
 
-#export FZF_COMPLETION_TRIGGER='~~'
+export FZF_COMPLETION_TRIGGER='~~'
 
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.
