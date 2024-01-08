@@ -99,7 +99,7 @@ end)
 local zsh_packages = task("Zsh packages", function()
     if system_type() == "arch" then
         pkg.arch.package_manager = "yay"
-        pkg.arch.ensure({ "zsh", "starship", "ttf-fira-code" })
+        pkg.arch.ensure({ "zsh", "starship", "ttf-fira-code", "fzf", "fd", "bat", "tree" })
     end
 end)
 
